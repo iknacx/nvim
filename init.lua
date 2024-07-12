@@ -20,6 +20,7 @@ opt.relativenumber = true
 opt.cursorline = true
 opt.incsearch = true
 opt.hlsearch = false
+opt.wrap = false
 
 opt.expandtab = true
 opt.tabstop = 2
@@ -39,7 +40,6 @@ opt.splitright = true
 opt.splitbelow = true
 
 opt.scrolloff = 8
-
 opt.signcolumn = "yes"
 opt.colorcolumn = '100'
 opt.showmode = false

@@ -4,6 +4,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     gen-luarc.url = "github:mrcjkb/nix-gen-luarc-json";
+
   };
 
   outputs = { nixpkgs, gen-luarc, ... } @ inputs: let

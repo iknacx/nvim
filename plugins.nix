@@ -1,5 +1,5 @@
 inputs: pkgs: let
-  customPlugin = src: pname: pkgs.vimUtils.buildVimPlugin {
+  customPlugin = pname: src: pkgs.vimUtils.buildVimPlugin {
     inherit pname src;
     version = src.lastModifiedDate;
   };
@@ -22,17 +22,23 @@ in {
     nvim-lspconfig
     nvim-navic
     nvim-treesitter.withAllGrammars
+    otter-nvim
 
     # Telescope
     telescope-nvim
 
     # Tools
+    comment-nvim
+    gitsigns-nvim
+    lazygit-nvim
     nvim-autopairs
     nvim-surround
+    oil-nvim
     which-key-nvim
 
     # Dependencies
     plenary-nvim
+    nvim-web-devicons
   ];
 
   # Language servers

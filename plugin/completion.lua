@@ -2,6 +2,11 @@ local cmp = require("cmp")
 local lspkind = require("lspkind")
 local luasnip = require("luasnip")
 
+cmp.event:on(
+  "confirm_done",
+  require("nvim-autopairs.completion.cmp").on_confirm_done()
+)
+
 cmp.setup {
   window = {
     completion = cmp.config.window.bordered(),
